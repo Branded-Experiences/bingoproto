@@ -1,0 +1,7 @@
+//Example usage
+// @media #{$sm} { css }
+// @media #{$lg} { css }
+
+
+$lg: 'only screen and (min-width: 1270px)'; // Large Desktops
+$sm: 'only screen and (max-width: 767px)'; // Large and small phones.

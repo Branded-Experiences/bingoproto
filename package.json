@@ -1,0 +1,37 @@
+{
+  "name": "bingoproto",
+  "version": "1.0.0",
+  "description": "Interactive wireframes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Branded-Experiences/bingoproto.git"
+  },
+  "author": "Andrew Theroux",
+  "license": "ISC",
+  "bugs": {
+    "url": "Branded-Experiences/bingoproto/issues"
+  },
+  "homepage": "https://github.com/Branded-Experiences/bingoproto#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.10",
+    "browserify": "^11.2.0",
+    "browserify-shim": "^3.8.11",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browser": {
+    "cling": "./src/javascript/clingify.jquery.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}

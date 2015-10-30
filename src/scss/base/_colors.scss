@@ -1,0 +1,18 @@
+$default: #262626;
+$linkcolor: #0071D2;
+$light: #EAEAEA;
+$dark: #979797;
+$darker: #4A4A4A;
+
+%textlink {
+	color: $linkcolor;
+}
+
+html {
+	color: $default;
+}
+
+a {
+	color: $default;
+	text-decoration: none;
+}

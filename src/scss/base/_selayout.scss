@@ -1,0 +1,21 @@
+.content {
+	@media #{$xs} {
+		display: flex;
+		flex-flow: column;
+	}
+}
+.se-header {
+	order: 1;
+}
+.primary--hero {
+	order: 2;
+}
+.primary--supporting {
+	order: 3;
+}
+.secondary {
+	order: 4;
+}
+.footer {
+	order: 5;
+}
