@@ -20,9 +20,6 @@
     "gulp-sass": "^2.0.4",
     "vinyl-source-stream": "^1.1.0"
   },
-  "browser": {
-    "cling": "./src/javascript/clingify.jquery.js"
-  },
   "browserify": {
     "transform": [
       "browserify-shim"

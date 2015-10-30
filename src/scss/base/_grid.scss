@@ -11,3 +11,13 @@
 .clearfix:after, %clearfix:after {
 	clear: both;
 }
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1024px;
+	width: 100%;
+}
+.inner {
+	display: table;
+	width: 100%;
+}

@@ -1,0 +1,9 @@
+.copy {
+	border: 1px solid green;
+	display: table-cell;
+	width: 50%;
+
+	@media #{$sm} {
+		display: table-row;
+	}
+}
