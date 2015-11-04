@@ -1,5 +1,5 @@
 .game {
-	border: 1px solid orange;
+	//border: 1px solid orange;
 	display: table-cell;
 	vertical-align: middle;
 	width: 50%;
@@ -13,6 +13,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
+	position: relative;
 }
 .square {
 	display: flex;
@@ -34,5 +35,23 @@
 	}
 }
 .success {
-	
+	background: white;
+	border: 1px solid navy;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	& > * {
+		text-align: center;
+		width: 100%;
+	}
+	h3 {
+		font-size: 2em;
+	}
 }

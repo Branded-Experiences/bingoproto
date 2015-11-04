@@ -1,5 +1,5 @@
 .copy {
-	border: 1px solid green;
+	//border: 1px solid green;
 	display: table-cell;
 	padding: 1em;
 	width: 50%;
@@ -10,5 +10,10 @@
 
 	p {
 		margin-bottom: 1em;
+	}
+	.sponsor {
+		border: 1px solid pink;
+		margin: 1em 0;
+		padding: 1em;
 	}
 }

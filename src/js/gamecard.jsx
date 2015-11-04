@@ -49,7 +49,6 @@ module.exports = React.createClass({
     );
   },
   componentDidUpdate: function () {
-    console.log('updated');
     var winCodition = [true, true, true, true, true];
 
     var self = this;
@@ -76,6 +75,7 @@ module.exports = React.createClass({
     winner ? this.victory() : null;    
   },
   victory: function() {
+    // prevents infinite loops
     this.state.showSuccess ? null : this.setState({showSuccess : true, showCard : false});
   },
   render: function() {
@@ -89,12 +89,10 @@ module.exports = React.createClass({
     }.bind(this));
 
     return <div>
-    { this.state.showCard ?
-      <figure className="card">      
+      <figure className="card animated flipInX">      
         {list}
-      </figure> : null
-    }
-    { this.state.showSuccess ? <Success /> : null }
+        { this.state.showSuccess ? <Success /> : null }
+      </figure>
     </div>
 
   }
