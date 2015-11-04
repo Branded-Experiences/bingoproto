@@ -1,6 +1,7 @@
 .game {
 	border: 1px solid orange;
 	display: table-cell;
+	vertical-align: middle;
 	width: 50%;
 
 	@media #{$sm} {
@@ -8,18 +9,30 @@
 	}
 }
 .card {
+	border-radius: 5px;
 	display: flex;
 	flex-flow: row wrap;
 	width: 100%;
 }
 .square {
-	border: 1px solid teal;
+	display: flex;
 	width: 20%;
 
-	&.clicked {
-		background: green;
+	&__inner {
+		margin: 1px;
+		border-radius: 2px;
+		border: 1px solid #333;
+		padding: 0.5em;
+		width: 100%;
+
 	}
-	&.notclicked {
-		background: grey;
+	&.clicked &__inner {
+		background: rgba(0,123,0,0.5);
 	}
+	&.notclicked &__inner {
+		background: #eee;
+	}
+}
+.success {
+	
 }

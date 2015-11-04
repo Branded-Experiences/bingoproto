@@ -1,9 +1,14 @@
 .copy {
 	border: 1px solid green;
 	display: table-cell;
+	padding: 1em;
 	width: 50%;
 
 	@media #{$sm} {
 		display: table-row;
+	}
+
+	p {
+		margin-bottom: 1em;
 	}
 }
