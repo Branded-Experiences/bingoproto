@@ -1,5 +1,3 @@
-console.log('hi hello');
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Gamecard = require('./gamecard');
