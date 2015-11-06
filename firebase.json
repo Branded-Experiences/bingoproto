@@ -5,5 +5,24 @@
     "firebase.json",
     "**/.*",
     "**/node_modules/**"
-  ]
+  ],
+   "headers": [ {
+   	"source" : "**/*.@(css)",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=60"
+    } ]
+    }, {
+    "source" : "**/*.@(js)",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=60"
+    } ]
+    }, {
+    "source" : "**/*.@(html)",
+    "headers" : [ {
+      "key" : "Cache-Control",
+      "value" : "max-age=60"
+    } ]
+  } ]
 }
