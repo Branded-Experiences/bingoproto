@@ -97,10 +97,13 @@ module.exports = React.createClass({
       />
     };
 
-    return <div>
+    return <div className="game-container">
+      { this.state.showCard ? 
       <figure className="card animated flipInX">      
         {list}
       </figure>
+      : null
+    }
     { this.state.showSuccess ? msg(this) : null }
     </div>
 
