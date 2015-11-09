@@ -20,6 +20,7 @@
 	width: 20%;
 
 	&__inner {
+		transition: background-color 0.1s;
 		margin: 1px;
 		border-radius: 2px;
 		border: 1px solid #333;

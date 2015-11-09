@@ -3,7 +3,6 @@ var ReactDOM = require('react-dom');
 var Gamecard = require('./gamecard');
 
 var data = {
-	title : 'Bingo Card',
 	combos : [
 		// rows
 		[1,2,3,4,5],
@@ -122,11 +121,7 @@ var data = {
 			position: 25,
 			copy: 'Card 25'
 		}
-	],
-	success : {
-		title: 'BINGO!',
-		msg: 'You are most definitely the parent of a threenager. <br/> Congratulations?'
-	}	
+	]
 }
 
 var element = React.createElement(Gamecard, data);
