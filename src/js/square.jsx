@@ -17,6 +17,6 @@ module.exports = React.createClass({
     }
   },
   render: function() {
-    return <div onClick={this.handleClick} className={"square " + (this.state.clicked === true ? "clicked" : "notclicked") }><div className="square__inner">{this.props.item.copy}</div></div>
+    return <div onClick={this.handleClick} className={"square " + (this.state.clicked === true ? "clicked" : "notclicked") } ><div className="square__inner">{this.props.item.copy}</div></div>
   }
 });
