@@ -78,21 +78,30 @@ module.exports = React.createClass({
     // prevents infinite loops
     this.state.showSuccess ? null : this.setState({showSuccess : true, showCard : false});
   },
+  reset : function() {
+    console.log('reset');
+    this.replaceState(this.getInitialState());
+  },
   render: function() {
   	var list = this.props.cards.map(function(item){
       return <Square
               item={item}
+              key={item.position}
               copy={item.copy}
-              position={item.position}
               whenItemClicked={this.handleItemClick}  
               />
     }.bind(this));
+    var msg = function(self){
+      return <Success 
+        whenButtonClicked={self.reset}
+      />
+    };
 
     return <div>
       <figure className="card animated flipInX">      
         {list}
-        { this.state.showSuccess ? <Success /> : null }
       </figure>
+    { this.state.showSuccess ? msg(this) : null }
     </div>
 
   }
